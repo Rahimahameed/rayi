@@ -1,0 +1,23 @@
+<h1> HOME PAGE</h1>
+<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, perspiciatis ex ipsam nesciunt repudiandae rem sequi ad dolorum. Esse odit quae velit corrupti et aliquid minima laborum quod, fugit repudiandae?</p>
+<p>{{varName}}</p>
+
+ <button (click)="myfunction()">click</button><br>
+<input type="text" name="textname" [(ngModel)]="textname">
+<div [style.background-color]="textname"></div>
+<input type="text" placeholder="enter student name" [(ngModel)]="stdname">
+<button (click)="Addstudent()"> Add student</button>
+
+
+<ul>
+    <!-- <li *ngfor="let std of studentname"> {{std}}<span>x</span></li> -->
+    <li *ngfor="let std of studentname">{{std}}
+            <button (click)="delstudent()">x</button>
+        </li>
+
+
+</ul>
+
+
+
+
